@@ -21,31 +21,24 @@ class Coding extends StatelessWidget {
           ),
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.9,
-          label: "Kotlin",
-        ),
-        AnimatedLinearProgressIndicator(
-          percentage: 0.9,
-          label: "Java",
-        ),
-        AnimatedLinearProgressIndicator(
           percentage: 0.7,
-          label: "Swift",
+          label: "Python",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.60,
-          label: "Dart",
+          percentage: 0.6,
+          label: "Flutter / Dart",
         ),
         AnimatedLinearProgressIndicator(
-          percentage: 0.34,
-          label: "JavaScript",
-        ),AnimatedLinearProgressIndicator(
+          percentage: 0.6,
+          label: "C++",
+        ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.5,
+          label: "Shell Script",
+        ),
+        AnimatedLinearProgressIndicator(
           percentage: 0.3,
-          label: "HTML",
-        ),
-        AnimatedLinearProgressIndicator(
-          percentage: 0.25,
-          label: "CSS",
+          label: "Unity / C#",
         ),
       ],
     );

@@ -22,7 +22,7 @@ class Info extends StatelessWidget {
               alignment: Alignment.center,
               margin: EdgeInsets.only(top: 4, left: 16, right: 16),
               child: SelectableText(
-                "Noor Yasser El Nahhal",
+                "Sakupoyo",
                 style: Theme.of(context).textTheme.titleSmall,
               ),
             ),
@@ -35,22 +35,22 @@ class Info extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.w200, height: 1.5),
               ),
             ),
-            Container(
-                margin: EdgeInsets.only(top: defaultPadding),
-                alignment: Alignment.center,
-                color: Color(0xFF24242E),
-                child: SizedBox(
-                  width: 120,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      js.context.callMethod('open', [LINK_GITHUB]);
-                    },
-                    child: Text("Follow me"),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xFF3A3A42),
-                    ),
-                  ),
-                )),
+            // Container(
+            //     margin: EdgeInsets.only(top: defaultPadding),
+            //     alignment: Alignment.center,
+            //     color: Color(0xFF24242E),
+            //     child: SizedBox(
+            //       width: 120,
+            //       child: ElevatedButton(
+            //         onPressed: () {
+            //           js.context.callMethod('open', [LINK_GITHUB]);
+            //         },
+            //         child: Text("Follow me"),
+            //         style: ElevatedButton.styleFrom(
+            //           backgroundColor: Color(0xFF3A3A42),
+            //         ),
+            //       ),
+            //     )),
             Spacer(),
           ],
         ),

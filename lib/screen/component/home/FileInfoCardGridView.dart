@@ -21,7 +21,7 @@ class FileInfoCardGridView extends StatelessWidget {
           Container(
             alignment: Alignment.topLeft,
             child: Text(
-              "My Project",
+              "Artifacts",
               style: Theme.of(context).textTheme.displaySmall?.copyWith(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -45,8 +45,10 @@ class FileInfoCardGridView extends StatelessWidget {
               mainAxisSpacing: defaultPadding,
               childAspectRatio: 2.3,
             ),
-            itemBuilder: (context, index) =>
-                FileInfoCard(info: demo_projects[index], key: null,),
+            itemBuilder: (context, index) => FileInfoCard(
+              info: demo_projects[index],
+              key: null,
+            ),
           ),
         ],
       ),

@@ -21,10 +21,13 @@ class Knowledges extends StatelessWidget {
             style: Theme.of(context).textTheme.titleSmall,
           ),
         ),
-        KnowledgeText(text: "Android Native, Kotlin, Java"),
-        KnowledgeText(text: "IOS Native, Swift"),
-        KnowledgeText(text: "Flutter, Dart"),
-        KnowledgeText(text: "Git, Github, Gitlab"),
+        KnowledgeText(text: "Python (Django, Data Analysis)"),
+        KnowledgeText(text: "Flutter (Mobile, Web)"),
+        KnowledgeText(text: "Unity and C#"),
+        KnowledgeText(text: "Linux (Ubuntu)"),
+        KnowledgeText(text: "Pokemon Double Battle"),
+        KnowledgeText(text: "Japanese animation"),
+        KnowledgeText(text: "Football tactics"),
       ],
     );
   }

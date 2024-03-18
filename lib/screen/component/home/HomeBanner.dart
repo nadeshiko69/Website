@@ -20,7 +20,7 @@ class HomeBanner extends StatelessWidget {
           fit: StackFit.expand,
           children: [
             Image.asset(
-              "assets/images/bg.jpeg",
+              "assets/images/Background.jpg",
               fit: BoxFit.cover,
             ),
             Container(color: darkColor.withOpacity(0.66)),
@@ -31,7 +31,7 @@ class HomeBanner extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Discover my Amazing ${!Responsive.isMobile(context)?"\n":""}Art Space!",
+                    "Sakupoyo ${!Responsive.isMobile(context)?"\n":""}Artifact Storage",
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
@@ -40,19 +40,19 @@ class HomeBanner extends StatelessWidget {
                   ),
                   MyBuildAnimatedText(),
                   SizedBox(height: defaultPadding),
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: defaultPadding * 2,
-                          vertical: defaultPadding),
-                      backgroundColor: primaryColor,
-                    ),
-                    child: Text(
-                      "EXPLORE NOW",
-                      style: TextStyle(color: darkColor),
-                    ),
-                  ),
+                  // ElevatedButton(
+                  //   onPressed: () {},
+                  //   style: TextButton.styleFrom(
+                  //     padding: EdgeInsets.symmetric(
+                  //         horizontal: defaultPadding * 2,
+                  //         vertical: defaultPadding),
+                  //     backgroundColor: primaryColor,
+                  //   ),
+                  //   child: Text(
+                  //     "EXPLORE NOW",
+                  //     style: TextStyle(color: darkColor),
+                  //   ),
+                  // ),
                 ],
               ),
             )
@@ -72,7 +72,6 @@ class MyBuildAnimatedText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTextStyle(
-      // it applies same style to all the widgets under it
       style: Theme.of(context).textTheme.titleMedium!,
       child: Row(
         children: [
