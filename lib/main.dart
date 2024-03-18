@@ -5,6 +5,7 @@ import 'package:portfolio_website/screen/component/home/HomeBanner.dart';
 import 'package:portfolio_website/screen/main/HomeScreen.dart';
 import 'package:portfolio_website/util/MenuController.dart';
 import 'package:provider/provider.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Sakupoyo Artifacts',
       // we are using dark theme and we modify it as our need
       theme: ThemeData.dark().copyWith(
         primaryColor: primaryColor,
