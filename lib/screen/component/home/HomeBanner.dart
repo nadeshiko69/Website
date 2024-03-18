@@ -13,9 +13,11 @@ class HomeBanner extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 3,
       child: Container(
-        margin: EdgeInsets.all(
-            !Responsive.isMobile(context)?Responsive.isTablet(context)?0:10:12
-        ),
+        margin: EdgeInsets.all(!Responsive.isMobile(context)
+            ? Responsive.isTablet(context)
+                ? 0
+                : 10
+            : 12),
         child: Stack(
           fit: StackFit.expand,
           children: [
@@ -31,12 +33,15 @@ class HomeBanner extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Sakupoyo ${!Responsive.isMobile(context)?"\n":""}Artifact Storage",
+                    "Sakupoyo ${!Responsive.isMobile(context) ? "\n" : ""}Artifact Storage",
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: !Responsive.isMobile(context)?Responsive.isTablet(context)?25:40:14
-                    ),
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: !Responsive.isMobile(context)
+                            ? Responsive.isTablet(context)
+                                ? 25
+                                : 40
+                            : 14),
                   ),
                   MyBuildAnimatedText(),
                   SizedBox(height: defaultPadding),
@@ -63,7 +68,6 @@ class HomeBanner extends StatelessWidget {
   }
 }
 
-
 class MyBuildAnimatedText extends StatelessWidget {
   const MyBuildAnimatedText({
     Key? key,
@@ -76,20 +80,20 @@ class MyBuildAnimatedText extends StatelessWidget {
       child: Row(
         children: [
           SizedBox(width: defaultPadding / 2),
-          Text("I build "),
+          // Text("I build "),
           Expanded(
             child: AnimatedTextKit(
               animatedTexts: [
                 TyperAnimatedText(
-                  "responsive web and mobile app.",
+                  "enjoy playing Pokemon VGC.",
                   speed: Duration(milliseconds: 60),
                 ),
                 TyperAnimatedText(
-                  "complete e-Commerce app UI.",
+                  "die-hard fan of Nagoya Grampus.",
                   speed: Duration(milliseconds: 60),
                 ),
                 TyperAnimatedText(
-                  "Chat app with dark and light theme.",
+                  "favorite animation : SHIROBAKO",
                   speed: Duration(milliseconds: 60),
                 ),
               ],
